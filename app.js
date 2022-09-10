@@ -86,3 +86,102 @@ else if (loggedIn === true){
 else{
     console.log('tell user to log into account')
 }
+
+/**
+ * 
+ * Ejercicio 2
+ * 
+ * 
+ */
+
+let cash = 32
+let price = 40
+let difference = cash - price
+
+if (cash > price) {
+    console.log(`Pagaste de más, tu vuelto es ${difference}`)
+}
+else if (cash === price) {
+    console.log('Pagaste con el monto exacto, tenga un buen día')
+}
+else {
+    console.log(`No tienes dinero suficiente te hace falta ${difference * -1} dólares`)
+}
+
+/**
+ * 
+ * LOGICAL OPERATORS
+ * 
+ */
+
+let dinero = 50
+let precio = 40
+let isStoreOpen = true
+
+if (dinero >= precio && isStoreOpen === true) {
+    console.log('Imprime el recibo')
+}
+
+/**
+ * 
+ * truthy and false values
+ * 
+ */
+
+let val = ""
+let val2 = NaN
+let val3 = []
+let val4 = "a"
+let val5 = 0
+let val6 = {}
+
+if (val) {
+    console.log("truthy value")
+}
+else {
+    console.log ("falsy value")
+}
+
+if (val2) {
+    console.log("truthy value")
+}
+else {
+    console.log ("falsy value")
+}
+
+if (val3) {
+    console.log("truthy value")
+}
+else {
+    console.log ("falsy value")
+}
+
+if (val4) {
+    console.log("truthy value")
+}
+else {
+    console.log ("falsy value")
+}
+
+if (val5) {
+    console.log("truthy value")
+}
+else {
+    console.log ("falsy value")
+}
+
+if (val6) {
+    console.log("truthy value")
+}
+else {
+    console.log ("falsy value")
+}
+
+
+/**
+ * 
+ * terniary operators
+ * 
+ */
+
+let hot = true
