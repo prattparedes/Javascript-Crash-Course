@@ -184,4 +184,33 @@ else {
  * 
  */
 
-let hot = true
+let hot = false
+
+hot ? console.log(`it's hot`) : console.log(`it's cold`)
+
+let suscrito = true
+let logeado = false
+
+let statusperson = suscrito && logeado ? 'mostrar video' : 'esconder video'
+console.log(statusperson)
+
+/**
+ * 
+ * ejercicio if else
+ * 
+ * 
+ */
+
+let plata = 45
+let presio = 40
+let tiendaAbierta = true
+
+// 'Dar recibo' : 'No dar recibo'
+
+plata >= presio && tiendaAbierta ? console.log('Dar recibo') : console.log('No dar recibo')
+
+//Para no repetir doble console.log, se puede asignar todo lo de arriba a una variable y eso entregar
+let estado = plata >= presio && tiendaAbierta ? 'Dar recibo2' : 'No dar recibo2'
+console.log(estado)
+
+
