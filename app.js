@@ -39,7 +39,32 @@ console.log(añosluz)
  */
 
 let celsius = 24;
-let fahrenheit = celsius*1.8 + 32      /* Convierte celsius a fahrenheit */
+let fahrenheit = celsius * 1.8 + 32;      /* Convierte celsius a fahrenheit */
 
 console.log(fahrenheit)
-alert(celsius + ' celsius convertido a fahrenheit es ' + fahrenheit)  /*print out result */
+console.log(celsius + ' celsius convertido a fahrenheit es ' + fahrenheit)  /*print out result */
+
+
+
+/* EQUALITY */
+
+let bool = '1' == 1
+let bool2 = '1' === 1
+let bool3 = '5' === 5
+let bool4 = true == 5 > 20
+
+
+console.log(bool)
+console.log(bool2)
+console.log(bool3)
+console.log(bool4)
+
+let bool5 = '22' !== 22
+let bool6 = '6' != 6
+let bool7 = '6' !== 6
+
+
+console.log(bool5)
+console.log(bool6)
+console.log(bool7)
+
