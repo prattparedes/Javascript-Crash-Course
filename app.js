@@ -68,3 +68,21 @@ console.log(bool5)
 console.log(bool6)
 console.log(bool7)
 
+/**
+ * 
+ * Conditionals
+ * 
+ */
+
+let subscribed = true
+let loggedIn = true
+
+if (subscribed === true) {
+    console.log('show the video')
+}
+else if (loggedIn === true){
+    console.log('tell user to upgrade to PRO')
+}
+else{
+    console.log('tell user to log into account')
+}
