@@ -214,3 +214,73 @@ let estado = plata >= presio && tiendaAbierta ? 'Dar recibo2' : 'No dar recibo2'
 console.log(estado)
 
 
+/**
+ * 
+ * WORST WAY TO CODE IS BY REPEATING LINES OF CODE
+ * 
+ */
+
+let count = 1;
+console.log(count)
+count = count + 1;
+console.log(count)
+count = count + 1;
+console.log(count)
+count = count + 1;
+console.log(count)
+
+// DRY = DON'T REPEAT YOURSELF.
+
+/**
+ * 
+ * LOOPS (Nadie usa WHILE todos usan FOR)
+ * 
+ */
+
+//  let contador = 1;
+
+//  while (contador <= 100) {
+//     console.log(contador)
+//     contador = contador + 1
+//  }  
+
+for (let i = 0; i < 3; i = i + 1) {
+    console.log(i+1);
+}                                           
+
+
+console.log(`<-------------------EJERCICIO DE LOOP-------------------->`)
+
+
+/** EJERCICIO DE LOOP FOR, que haga loop de 1 a 20
+ * Si el numero se puede dividir entre 3, que imprima "Frontend"
+ * Si el numero es divisible entre 5, que imprima "Simplified"
+ * Si el numero es divisible entre 3 y 5, que imprima "Frontend Simplified"
+ * Si el numero no es divisible entre ninguno, que imprima el número
+ * 
+ * @example
+ * 1 -> 1
+ * 2 -> 2
+ * 3 -> Frontend
+ * 4 -> 4
+ * 5 -> Simplified
+ * ...
+ * 15 -> "Frontend Simplified"
+ * ...
+ * 20 -> "Simplified"
+  */
+
+for (let i = 1; i <= 50; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(`${i} -> Frontend Simplified`)
+    } 
+    else if (i % 3 == 0) {
+        console.log(`${i} -> Frontend`)
+    }
+    else if (i % 5 == 0) {
+        console.log(`${i} -> Simplified`)
+    }
+    else {
+        console.log(`${i} -> ${i}`)
+    }
+}
