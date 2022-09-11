@@ -312,3 +312,78 @@ const string1 = 'Frontend Simplified'
 for (let i = 0; i < string1.length; ++i) {
     console.log(string1[i])
 }
+
+
+
+console.log('<------------FUNCIONES-------------->')
+
+// FUNCTIONS
+//DRY -> Don't Repeat Yourself
+console.log('Welcome to FES, David')
+console.log('Welcome to FES, Zen')
+console.log('Welcome to FES, Mitri')
+
+//Function syntax definition
+function welcomePersonToFES(primerNombre, segundoNombre) {
+    console.log(`Welcome to Frontend Simplified, ${primerNombre} ${segundoNombre}`)
+}
+
+//Calling the function
+welcomePersonToFES('Miauri', 'Rebirth');
+welcomePersonToFES('Thomas', 'Casapia');
+welcomePersonToFES('Combo', 'Breaker');
+
+
+
+console.log('<-----RETURN---->')
+// RETURN
+
+function fn() {
+    return 'my return'
+    console.log('mi función')
+}
+
+console.log(fn())
+
+
+function sumaDosNumeros (num1, num2) { // p = parameter
+    return num1 / num2
+}
+
+console.log(sumaDosNumeros(20, 8)); // a = argumento
+
+
+console.log('<------------------EJERCICIO 1 FUNCIONES------------------->')
+
+// EJERCICIO CON FUNCIONES
+
+/** Crea una función que convierta Celsius a Fahrenheit
+ * 
+ * Celsius a fahrenheit formula
+ * F = C * 1.8 + 32
+ * 
+ * @example
+ * convertCelsiusToFahrenheit (0) -> 32
+ * convertCelsiusToFahrenheit (10) -> 50
+ * convertCelsiusToFahrenheit (30) -> 86
+ */
+
+function convertirCaF(celsius) {
+    return celsius * 1.8 + 32
+}
+
+console.log(`El valor en fahrenheit es ${convertirCaF(0)}`)
+console.log(`El valor en fahrenheit es ${convertirCaF(10)}`)
+console.log(`El valor en fahrenheit es ${convertirCaF(30)}`)
+
+console.log('<---------------arrow function------------------->')
+
+// OTRA FORMA DE DEFINIR UNA FUNCION ES CON ARROW
+
+const dividirDosNums = (num1, num2) => {
+    return num1 / num2
+}
+
+console.log(dividirDosNums(10, 2))
+console.log(dividirDosNums(30, 4))
+console.log(dividirDosNums(50, 7))
