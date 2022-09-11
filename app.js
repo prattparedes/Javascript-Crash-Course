@@ -284,3 +284,31 @@ for (let i = 1; i <= 50; i++) {
         console.log(`${i} -> ${i}`)
     }
 }
+
+
+
+console.log('<------------------------Ejercicio LOOP 2------------------------>')
+/**
+ * 
+ * Ejercicio 2 FOR
+ * 
+ * Imprime cada letra del siguiente string:
+ * "Frontend Simplified"
+ * 
+ * @example
+ * 'F'
+ * 'r'
+ * 'o'
+ * 'n'
+ * 't'
+ * ...
+ * 'e'
+ * 'd'
+ * 
+ */
+
+const string1 = 'Frontend Simplified'
+
+for (let i = 0; i < string1.length; ++i) {
+    console.log(string1[i])
+}
