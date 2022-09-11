@@ -387,3 +387,216 @@ const dividirDosNums = (num1, num2) => {
 console.log(dividirDosNums(10, 2))
 console.log(dividirDosNums(30, 4))
 console.log(dividirDosNums(50, 7))
+
+
+console.log('<---------------------ARRAYS------------------>')
+// ARRAYS
+
+let item1 = 20
+let item2 = 30
+let item3 = 40
+let item4 = 50
+let item5 = 100
+
+// con array se puede conseguir lo mismo pero en una sola variable
+
+let arr = [20, 30, 40, 50, 100]
+
+
+// Primer elemento de un array
+console.log(arr[0])
+
+//ultimo elemento de un array
+console.log(arr[arr.length-1])
+
+//How to add elements to a array
+arr.push(200)
+
+console.log(arr[arr.length - 1])
+
+console.log(arr)
+
+console.log('<--------------------------FILTERS-------------------------->')
+//FILTER and CALLBACK
+
+let arr2 = [5, 10, 15, 20, 25, 30]
+
+let newArr = arr2.filter((element) => {
+    console.log(element)
+    if (element < 20) {
+    return true;
+    }
+})
+
+console.log(newArr)
+
+//SE PUEDE HACER TODO LO DE ARRIBA EN UNA SOLA LINEA
+
+console.log('<------------------------------FILTERS IN 1 LINE------------------------------>')
+
+let arr3 = [5, 10, 15, 20, 25, 30]
+
+let newArr2 = arr3.filter(element => element < 20)
+
+console.log(newArr2)
+
+
+/**
+ * 
+ * EJERCICIO ARRAYS
+ * 
+ * Filtrar todos los elementos 'FAIL' en un array
+ * 
+ * @example
+ * ['A+', 'A', 'FAIL'] => ['A+', 'A']
+ * ['FAIL', 'FAIL', 'B'] => ['B']
+ * ['FAIL'] => []
+ */
+
+let grades1 = ['A+', 'A', 'FAIL']
+let grades2 = ['FAIL', 'FAIL', 'B']
+let grades3 = ['FAIL']
+
+let filteredGrades1 = grades1.filter(element => element !== 'FAIL')
+console.log(filteredGrades1)
+
+let filteredGrades2 = grades2.filter(element => element !== 'FAIL')
+console.log(filteredGrades2)
+
+let filteredGrades3 = grades3.filter(element => element !== 'FAIL')
+console.log(filteredGrades3)
+
+// FORMA LARGA
+
+let notasfiltradas1 = grades1.filter((element) => {
+    if (element !== 'FAIL') {
+    return true;
+    }
+})
+
+console.log(notasfiltradas1)
+
+console.log('<----ACCEDER A TODOS LOS ELEMENTOS EN UN ARRAY CON UN FOR--->')
+// FOR in an array
+
+arraynueva = ['A+', 'B', 0, 'FAIL', 15, 'C-']
+
+for (i = 0; i < arraynueva.length; ++i) {
+    console.log(arraynueva[i])
+}
+
+
+console.log('<---------------EJERCICIO ARRAY 2---------------->')
+/**
+ * 
+ * EJERCICIO ARRAY PERO SIN USAR EL FILTER
+ * 
+ * *
+ */
+
+ let notas1 = ['A+', 'A', 'FAIL']
+ let notas2 = ['FAIL', 'FAIL', 'B']
+ let notas3 = ['FAIL']
+
+let nuevoNotas1 = []
+
+for (i = 0; i < notas1.length; ++i) {
+    if (notas1[i] !== 'FAIL')
+    nuevoNotas1.push(notas1[i])
+}
+
+console.log(nuevoNotas1)
+
+let nuevoNotas2 = []
+
+for (i = 0; i < notas2.length; ++i) {
+    if (notas2[i] !== 'FAIL')
+    nuevoNotas2.push(notas2[i])
+}
+
+console.log(nuevoNotas2)
+
+let nuevoNotas3 = []
+
+for (i = 0; i < notas3.length; ++i) {
+    if (notas3[i] !== 'FAIL')
+    nuevoNotas3.push(notas3[i])
+}
+
+console.log(nuevoNotas3)
+
+
+
+console.log('<--------------------------------------NUEVO ARRAY METHOD--------------------------------->')
+//NUEVO METODO DE ARRAY
+
+let arrayX = [1, 4, 9, 16]
+
+let nuevoarrayX = arrayX.map((element) => {
+    console.log(element)
+    return undefined;
+})
+
+console.log(nuevoarrayX)
+
+//MANERA CORTA
+
+let newarrayX = arrayX.map(element => 'dog')  //Transforma todos los elementos del array antiguo a dog
+
+console.log(newarrayX) 
+
+
+console.log('<---------------------EJERCICIO----------------------->')
+/**
+ * EJERCICIO
+ * Transformar cada elemento de un array de dolares a centavos
+ * 
+ * @examples
+ * [1, 5, 10, 3] => [100, 500, 1000, 300]
+ * [0, 10, 20] => [0, 1000, 2000]
+ */
+
+let dolares1 = [1, 5, 10, 3]
+let dolares2 = [0, 10, 20]
+
+let centavos1 = dolares1.map((element) => {
+    return element*100
+})
+
+console.log(centavos1)
+
+let centavos2 = dolares2.map((element) => {
+    return element*100
+})
+
+console.log(centavos2)
+
+//Manera corta
+
+let cents1 = dolares1.map(element => element * 100)
+
+console.log(cents1)
+
+let cents2 = dolares2.map(element => element * 100)
+
+console.log(cents2)
+
+//Ahora sin usar el MAP method
+centimos1 = []
+centimos2 = []
+
+for (i = 0; i < dolares1.length; ++i) {
+    centimos1.push(dolares1[i] * 100)
+}
+
+console.log(centimos1)
+
+for (i = 0; i < dolares2.length; ++i) {
+    centimos2.push(dolares2[i] * 100)
+}
+
+console.log(centimos2)
+
+
+
+
