@@ -746,3 +746,45 @@ Registro2({
 })
 
 console.log(usuarios[usuarios.length - 1].correo)
+
+console.log('<-------------------------------DOM-------------------------------->')
+// DOM
+/**La primera forma de acceder a un elemento */
+console.log(document.querySelector('#title'))
+console.log(document.querySelector('.texto1'))
+
+
+// Segunda forma de acceder a un elemento
+console.log(document.getElementById('title'))
+
+// Cambiar HTML
+document.querySelector('.texto1').innerHTML += ' Texto agregado'
+
+// CAmbiar CSS
+document.querySelector('#title').style.color = 'black'
+document.querySelector('.texto1').style.fontSize = '16px'
+
+//Función para el botón
+function cambiarTituloARojo() {
+    document.querySelector('#title').style.color = 'red'
+}
+
+//Funcionar para alternar entre rojo y negro
+
+function cambiarColor() {
+    if (document.querySelector('#title').style.color === 'red') {
+        document.querySelector('#title').style.color = 'black'
+    }
+    else if (document.querySelector('#title').style.color === 'black') {
+        document.querySelector('#title').style.color = 'red'
+    }
+}
+
+function cambiarfondo() {
+    document.querySelector('body').style.backgroundColor = 'yellow'
+}
+
+
+function ModoOscuro() {
+    document.querySelector('body').classList.toggle('dark-theme')
+}

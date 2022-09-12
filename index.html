@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script> <!-- PARA QUE EL JAVASCRIPT SE EJECUTE DESPUES DE QUE CARGUE LA PAGINA SE PONE "defer"-->
+                                        <!--Otra forma de hacerlo sería bajando el <script src="app.js"></script> hasta más abajo del body -->
 </head>
 <body>
-    
+    <h1 id="title">Pratt Thomas Paredes Casapia</h1>
+    <p class="texto1">Hola mundo</p>
+    <button onclick="cambiarColor()">Hazme Click</button>
+    <button onclick="ModoOscuro()">Cambiar fondo</button>
 </body>
 </html>
